@@ -15,4 +15,11 @@ let uhol = 0
 uhol = 90
 basic.forever(function () {
     pins.servoWritePin(AnalogPin.P16, uhol)
+    basic.showNumber(Math.round(pins.map(
+    uhol,
+    0,
+    180,
+    0,
+    9
+    )))
 })
